@@ -115,6 +115,15 @@
                 font-size: 14px;
             }
         }
+
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -151,30 +160,30 @@
         </ul>
     </nav>
 
-    <div class="o-que-foi">
+    <div class="o-que-foi fade-in">
         <h1>O que foi o acidente de chernobyl</h1>
         <hr>
         <p>O acidente nuclear de chenobyl, foi o maior acidente provocado por uma série de erros humanos e falhas na concepção do reator.Uma reação em cadeia incontrolável dentro do reator causou um aumento acentuado na temperatura, que resultou na fusão das barras de combustível, uma explosão de vapor e um incêndio.</p>
     </div>
     <div class="como-aconteceu">
-        <h1>Como o acidente aconteceu</h1> 
+        <h1>Como o acidente aconteceu</h1>
         <hr>
         <p>O acidente ocorreu devido diversos tipos erros cometidos durante o teste padrão dos reatores e entre outros erros, abaixo está a lista de erros durante o teste que provocaram o incidente:</p>
         <ol>
-            <li class="fade-in"><p><span>Desligamento dos sistemas automáticos de segurança</span>: Os operadores desligaram sistemas críticos de segurança, como o sistema de resfriamento de emergência, para realizar o teste, comprometendo a proteção do reator. <input type="checkbox" id="erro1-checkbox"><label for="erro1-checkbox"></label></p></li>
+            <li class="fade-in"><p><span>Desligamento dos sistemas automáticos de segurança</span>: Os operadores desligaram sistemas críticos de segurança, como o sistema de resfriamento de emergência, para realizar o teste, comprometendo a proteção do reator.</p></li>
         
-            <li class="esconder-erros" id="erro2"><p><span>Operação do reator em baixa potência</span>: O reator foi mantido em um nível de potência extremamente baixo, abaixo dos limites seguros, o que o tornou instável e difícil de controlar. <input type="checkbox" id="erro2-checkbox"><label for="erro2-checkbox"></label></p></li>
+            <li class="fade-in"><p><span>Operação do reator em baixa potência</span>: O reator foi mantido em um nível de potência extremamente baixo, abaixo dos limites seguros, o que o tornou instável e difícil de controlar.</p></li>
         
-            <li class="esconder-erros" id="erro3"><p><span>Remoção de barras de controle em excesso</span>: Os operadores removeram mais barras de controle do que o permitido, tentando estabilizar o reator, o que aumentou o risco de uma reação descontrolada. <input type="checkbox" id="erro3-checkbox"><label for="erro3-checkbox"></label></p></li>
+            <li class="fade-in"><p><span>Remoção de barras de controle em excesso</span>: Os operadores removeram mais barras de controle do que o permitido, tentando estabilizar o reator, o que aumentou o risco de uma reação descontrolada.</p></li>
         
-            <li class="esconder-erros" id="erro4"><p><span>Ignorar alertas de segurança</span>: Alarmes e indicadores de que o reator estava em uma condição perigosa foram ignorados ou subestimados pela equipe. <input type="checkbox" id="erro4-checkbox"><label for="erro4-checkbox"></label></p></li>
+            <li class="fade-in"><p><span>Ignorar alertas de segurança</span>: Alarmes e indicadores de que o reator estava em uma condição perigosa foram ignorados ou subestimados pela equipe.</p></li>
         
-            <li class="esconder-erros" id="erro5"><p><span>Inserção tardia das barras de controle</span>: Quando os operadores perceberam a emergência, tentaram inserir as barras de controle para desligar o reator, mas a demora fez com que a situação já estivesse fora de controle. <input type="checkbox" id="erro5-checkbox"><label for="erro5-checkbox"></label></p></li>
+            <li class="fade-in"><p><span>Inserção tardia das barras de controle</span>: Quando os operadores perceberam a emergência, tentaram inserir as barras de controle para desligar o reator, mas a demora fez com que a situação já estivesse fora de controle.</p></li>
         
-            <li class="esconder-erros" id="erro6"><p><span>Falta de comunicação adequada</span>: A equipe de operação não estava totalmente ciente dos riscos e não havia uma comunicação clara entre os operadores e os supervisores. <input type="checkbox" id="erro6-checkbox"><label for="erro6-checkbox"></label></p></li>
+            <li class="fade-in"><p><span>Falta de comunicação adequada</span>: A equipe de operação não estava totalmente ciente dos riscos e não havia uma comunicação clara entre os operadores e os supervisores.</p></li>
         </ol>
         <hr>
-        <section class="esconder-erros" id="continuacao">
+        <section class="fade-in" id="continuacao">
             <p>Após todos esses erros, o teste já estava quase em seu objetivo final, porém, houve um aumento lento, mas inesperado da temperatura do reator, logo o chefe de turno, com medo, pressiona o botão de emergência "AZ-5"</p>
             <div class="az-5">
                 <button id="botao">
@@ -184,9 +193,67 @@
             <img src="./usina-img.png" width="350px" height="350px" id="usina-image">
             <img class="sumir" src="./usina-gif.gif" width="350px" height="350px" id="usina-gif">
         </section>
-        <p class="esconder-erros" id="final">O bot ão que deveria parar o teste, acabou servindo como ignição para a explosão do RBMK. Uma bolha de hidrogênio formada pela reação de vapor e o combustível explode. Fragmentos do núcleo, pedaços de grafite e de combustível levados a temperatura muito alta provocam incêndios, setenta toneladas de produtos radioativos são espalhados em volta da central, cinquenta toneladas de gás e de poeira radioativa formam uma imensa nuvem que varre o céu da Europa durante meses.</p>
+        <p class="fade-in" id="final">O botão que deveria parar o teste, acabou servindo como ignição para a explosão do RBMK. Uma bolha de hidrogênio formada pela reação de vapor e o combustível explode. Fragmentos do núcleo, pedaços de grafite e de combustível levados a temperatura muito alta provocam incêndios, setenta toneladas de produtos radioativos são espalhados em volta da central, cinquenta toneladas de gás e de poeira radioativa formam uma imensa nuvem que varre o céu da Europa durante meses.</p>
     </div>
 
     <script src="./main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animação para os links do menu
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-3px)';
+                    this.style.transition = 'transform 0.3s';
+                });
+                link.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Função para ajustar o layout em diferentes resoluções
+            function adjustLayout() {
+                const navbar = document.querySelector('.navbar');
+                const navLinks = document.querySelector('.nav-links');
+                if (window.innerWidth <= 768) {
+                    navbar.style.flexDirection = 'column';
+                    navLinks.style.flexDirection = 'column';
+                } else {
+                    navbar.style.flexDirection = 'row';
+                    navLinks.style.flexDirection = 'row';
+                }
+            }
+
+            // Chamar a função inicialmente e adicionar um listener para redimensionamento
+            adjustLayout();
+            window.addEventListener('resize', adjustLayout);
+
+            // Função para verificar se um elemento está visível na tela
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            // Função para mostrar elementos quando estiverem visíveis
+            function showElementsOnScroll() {
+                const fadeElements = document.querySelectorAll('.fade-in');
+                fadeElements.forEach(element => {
+                    if (isElementInViewport(element)) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            // Adicionar listener para o evento de scroll
+            window.addEventListener('scroll', showElementsOnScroll);
+            // Chamar a função inicialmente para mostrar elementos já visíveis
+            showElementsOnScroll();
+        });
+    </script>
 </body>
 </html>
