@@ -1,0 +1,73 @@
+@media screen and (max-width: 720px){
+    .o-que-foi p{
+        margin: 25px 0px 0px 0px;
+    }
+    
+    .como-aconteceu p{
+        margin: 30px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .como-aconteceu li, li p{
+        margin: 30px 20px 0px 0px;
+        text-align: center;
+    }
+
+    #usina-image, #usina-gif{
+        width: 250px;
+        height: 250px;
+    }
+
+    .az-5{
+        width: 250px;
+        height: 250px;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    body h1{
+        font-size: 2em;
+    }
+
+    #usina-image, #usina-gif{
+        width: 300px;
+        height: 300px;
+    }
+
+    .az-5{
+        width: 300px;
+        height: 300px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 720px){
+    body h1{
+        font-size: 2.5em;
+    }
+
+    .o-que-foi p{
+        margin: 25px 10px 0px 10px;
+    }
+    
+    .como-aconteceu p{
+        margin: 30px 10px 0px 10px;
+    }
+
+    .como-aconteceu li, li p{
+        margin: 30px 10px 0px 10px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 845px){
+    #usina-image, #usina-gif, .az-5{
+        width: 300px;
+        height: 300px;
+    }
+
+    .az-5 p{
+        width: 100%;
+        font-size: 1em;
+    }
+}

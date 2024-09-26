@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Nuclear - Informações e Modelos 3D</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiva.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="#modelos3d" class="nav-link">
+                    <i class="fas fa-cube"></i>
+                    Modelos 3D
+                </a>
+                <ul class="dropdown">
+                    <li><a href="https://netheriosa.github.io/intro-usina/">Usina</a></li>
+                    <li><a href="https://netheriosa.github.io/intro/">Chernobyl</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="https://netheriosa.github.io/pag2/" class="nav-link">
+                    <i class="fas fa-radiation"></i>
+                    Chernobyl
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://netheriosa.github.io/pag3/" class="nav-link">
+                    <i class="fas fa-atom"></i>
+                    Energia Nuclear
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://netheriosa.github.io/pag4/" class="nav-link">
+                    <i class="fas fa-industry"></i>
+                    Usina
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="o-que-foi fade-in.visible">
+        <h1>O que foi o acidente de chernobyl</h1>
+        <hr>
+        <p>O acidente nuclear de chenobyl, foi o maior acidente provocado por uma série de erros humanos e falhas na concepção do reator.Uma reação em cadeia incontrolável dentro do reator causou um aumento acentuado na temperatura, que resultou na fusão das barras de combustível, uma explosão de vapor e um incêndio.</p>
+    </div>
+    <div class="como-aconteceu">
+        <h1>Como o acidente aconteceu</h1>
+        <hr>
+        <p>O acidente ocorreu devido diversos tipos erros cometidos durante o teste padrão dos reatores e entre outros erros, abaixo está a lista de erros durante o teste que provocaram o incidente:</p>
+        <ol>
+            <li class="fade-in"><p><span>Desligamento dos sistemas automáticos de segurança</span>: Os operadores desligaram sistemas críticos de segurança, como o sistema de resfriamento de emergência, para realizar o teste, comprometendo a proteção do reator.</p></li>
+        
+            <li class="fade-in"><p><span>Operação do reator em baixa potência</span>: O reator foi mantido em um nível de potência extremamente baixo, abaixo dos limites seguros, o que o tornou instável e difícil de controlar.</p></li>
+        
+            <li class="fade-in"><p><span>Remoção de barras de controle em excesso</span>: Os operadores removeram mais barras de controle do que o permitido, tentando estabilizar o reator, o que aumentou o risco de uma reação descontrolada.</p></li>
+        
+            <li class="fade-in"><p><span>Ignorar alertas de segurança</span>: Alarmes e indicadores de que o reator estava em uma condição perigosa foram ignorados ou subestimados pela equipe.</p></li>
+        
+            <li class="fade-in"><p><span>Inserção tardia das barras de controle</span>: Quando os operadores perceberam a emergência, tentaram inserir as barras de controle para desligar o reator, mas a demora fez com que a situação já estivesse fora de controle.</p></li>
+        
+            <li class="fade-in"><p><span>Falta de comunicação adequada</span>: A equipe de operação não estava totalmente ciente dos riscos e não havia uma comunicação clara entre os operadores e os supervisores.</p></li>
+        </ol>
+        <hr>
+        <section class="fade-in" id="continuacao">
+            <p>Após todos esses erros, o teste já estava quase em seu objetivo final, porém, houve um aumento lento, mas inesperado da temperatura do reator, logo o chefe de turno, com medo, pressiona o botão de emergência "AZ-5"</p>
+            <div class="az-5">
+                <button id="botao">
+                    <p>AZ-5</p>
+                </button>
+            </div>
+            <img src="./usina-img.png" width="350" height="350" id="usina-image" alt="Imagem da usina">
+            <img src="./usina-gif.gif" width="350" height="350" id="usina-gif" alt="GIF da explosão da usina">
+        </section>
+        <p class="fade-in" id="final">O botão que deveria parar o teste, acabou servindo como ignição para a explosão do RBMK. Uma bolha de hidrogênio formada pela reação de vapor e o combustível explode. Fragmentos do núcleo, pedaços de grafite e de combustível levados a temperatura muito alta provocam incêndios, setenta toneladas de produtos radioativos são espalhados em volta da central, cinquenta toneladas de gás e de poeira radioativa formam uma imensa nuvem que varre o céu da Europa durante meses.</p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face{
+    font-family: "Heycaz";
+    src: url('../fonts/HEYCAZpersonal.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-image: linear-gradient(to top, #596d51 50%, #6f8765);
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+}
+
+/*css do enrico*/
+
+/*barra superior*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 5px 15px;
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+.nav-link i {
+    margin-right: 5px;
+}
+
+.nav-link:hover {
+    color: #4CAF50;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #2a2a2a;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.dropdown a:hover {
+    color: #4CAF50;
+}
+/* fim da css da barra*/
+
+.fade-in {
+    animation: aparecer linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; 
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+#usina-image, #usina-gif {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#usina-gif {
+    display: none;
+}
+
+
+/*meu css*/
+body h1{
+    font-family: "Heycaz", "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    text-shadow: 5px 3px 2px #6B8461;
+}
+
+hr{
+    margin-left: 4vw;
+    width: 90%;
+    border: 4px solid black;
+    border-radius: 25px;
+}
+
+span{
+    font-weight: bold;
+    color: #7ed957;
+    text-shadow: 2px 2px 2px #60a442;
+}
+
+.o-que-foi{
+    background-color: #5b824a;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 12px 12px 5px #3a4735;
+    padding: 10px 0px 10vh 0px;  
+    text-align: center;
+}
+
+.o-que-foi p{
+    margin: 25px 100px 0px 100px;
+}
+
+.como-aconteceu{
+    background-color: #5b824a;
+    box-shadow: 12px 12px 5px #3a4735;
+    border-radius: 15px;
+    margin-top: 25px;
+    padding: 10px 0px 10vh 0px;  
+}
+
+.o-que-foi, .como-aconteceu{
+    border: double 20px;
+}
+
+.como-aconteceu h1{
+    text-align: center;
+}
+
+.como-aconteceu p, li{
+    margin: 25px 100px 0px 100px;
+}
+
+.como-aconteceu li p{
+    margin: 0;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+label{
+    background: url(../img/checked-off.png);
+    display: inline-block;
+    background-size: 50px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+
+label:hover{
+    cursor: pointer;
+    width: 60px;
+    background-size: 60px;
+}
+
+input:checked + label{
+    background: url(../img/checked-on.png);
+}
+
+input:checked + label:hover{
+    background-size: 60px;
+}
+
+.esconder-erros{
+    display: none;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.az-5{
+    background-color: rgb(104, 89, 89);
+    height: 350px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 5px rgb(76, 65, 65) inset, -8px -8px 5px rgb(76, 65, 65) inset;
+}
+
+#botao{
+    background-color: rgb(200, 13, 13);
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 5em;
+}
+
+#botao p{
+    position: absolute;
+}
+
+button{
+    box-shadow: -10px -10px 0px rgb(150, 35, 35) inset;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+section img, .az-5{
+    margin: 50px 0px 20px 0px;
+    border-radius: 25px;
+}
+
+.sumir{
+    display: none;
+}
